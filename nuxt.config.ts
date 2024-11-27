@@ -11,5 +11,6 @@ export default defineNuxtConfig({
       Lora: [400, 700], // Optional serif for headings
     },
     display: 'swap', // This makes the font swap smoothly when loaded
-  }
+  },
+  pages: true
 })
