@@ -2,6 +2,7 @@
   <div>
       <Hero></Hero>
       <Sections-Services></Sections-Services>
+      <Sections-Hours></Sections-Hours>
       <Sections-Reviews></Sections-Reviews>
       <Sections-Contact></Sections-Contact>
   </div>

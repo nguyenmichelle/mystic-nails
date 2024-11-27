@@ -1,5 +1,5 @@
 <template>
   <div>
-    <Section :isOdd="true" title="CONTACT US"></Section>
+    <Section :isOdd="false" title="CONTACT US" id="contact"></Section>
   </div>
 </template>

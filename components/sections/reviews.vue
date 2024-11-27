@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Section :isOdd="false" title="WHAT OUR CUSTOMERS ARE SAYING">
+    <Section :isOdd="true" title="WHAT OUR CUSTOMERS ARE SAYING" id="reviews">
       <div class="max-w-7xl mx-auto px-6 sm:px-8 py-12">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div v-for="review in reviews" :key="review.id" class="bg-white shadow-lg rounded-lg overflow-hidden">
