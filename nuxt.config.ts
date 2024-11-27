@@ -12,5 +12,10 @@ export default defineNuxtConfig({
     },
     display: 'swap', // This makes the font swap smoothly when loaded
   },
-  pages: true
+  pages: true,
+  head: {
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    ]
+  }
 })
