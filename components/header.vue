@@ -18,7 +18,7 @@
         </div>
 
         <!-- Right Section -->
-        <div class="flex-1 flex items-center justify-end">
+        <div class="flex-1 flex items-center justify-end hidden md:block">
           <div class="flex space-x-1">
             <a v-for="item in navigation" :key="item.name" :href="item.href"
                :class="[item.current ? 'bg-gray-900 text-white' : 'text-gray-500 hover:bg-gray-700 hover:text-white', 'rounded-md px-3 py-2 text-sm font-medium']"
