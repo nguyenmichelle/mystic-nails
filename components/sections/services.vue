@@ -1,15 +1,15 @@
 <template>
   <div>
     <Section :isOdd="true" title="SERVICES & PRICING LIST" id="services">
-      <div class="pb-10 flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4">
-        <div class="flex justify-center items-center bg-gray-200 w-full md:w-[80%] h-[100%]">
+      <div class="pb-10 flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4 w-full">
+        <div class="flex justify-center items-center w-full md:w-[48%] h-[430px] sm:h-[600px] md:h-[805px]">
           <object
               data="mystic-nails-menu-1.pdf#view=FitH&toolbar=0&navpanes=0"
               type="application/pdf"
               class="w-full h-full"
           ></object>
         </div>
-        <div class="flex justify-center items-center bg-gray-200 w-full md:w-[80%] h-[100%]">
+        <div class="flex justify-center items-center w-full md:w-[48%] h-[430px] sm:h-[600px] md:h-[805px]">
           <object
               data="mystic-nails-menu-2.pdf#view=FitH&toolbar=0&navpanes=0"
               type="application/pdf"
