@@ -10,8 +10,8 @@
           </h1>
           <p class="mt-8 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">Call to make an appointment today!</p>
           <div class="mt-10 flex items-center justify-center gap-x-6">
-            <a href="#" class="rounded-md bg-purple-400 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-purple-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Services & Pricing</a>
-            <a href="#" class="rounded-md bg-purple-400 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-purple-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Contact Us</a>
+            <a href="/#services" class="rounded-md border-solid border-2 border-purple-400 px-3.5 py-2.5 text-sm font-semibold text-purple-400 shadow-sm hover:bg-purple-800 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Services & Pricing</a>
+            <a href="/#contact" class="rounded-md border-solid border-2 border-purple-400 px-3.5 py-2.5 text-sm font-semibold text-purple-400 shadow-sm hover:bg-purple-800 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Contact Us</a>
           </div>
         </div>
       </div>
