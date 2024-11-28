@@ -13,6 +13,7 @@
     "@headlessui/vue": "^1.7.23",
     "@heroicons/vue": "^2.2.0",
     "@nuxtjs/tailwindcss": "^6.12.2",
+    "axios": "^1.7.8",
     "nuxt": "^3.14.1592",
     "vue": "latest",
     "vue-router": "latest"
