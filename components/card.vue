@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white border-solid border-2 border-gray-200 min-w-[175px] text-center">
+  <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white border-solid border-2 border-gray-200 min-w-[175px] md:min-w-[200px] text-center">
     <!-- Card Header -->
     <div class="border-solid border-2 border-black px-6 py-4">
       <h2 class="font-semibold text-l">{{ title }}</h2>
