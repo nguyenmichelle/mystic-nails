@@ -1,12 +1,11 @@
 <template>
   <div>
     <Section :isOdd="true" title="WHAT OUR CUSTOMERS ARE SAYING" id="reviews">
-      <div class="max-w-7xl mx-auto px-6 sm:px-8 py-12">
+      <div class="max-w-7xl mx-auto px-3 sm:px-6">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div v-for="review in reviews" :key="review.id" class="bg-white shadow-lg rounded-lg overflow-hidden">
             <div class="p-6">
               <div class="flex items-center space-x-4">
-                <img :src="review.photoUrl" class="h-12 w-12 rounded-full object-cover" alt="Customer Photo">
                 <div>
                   <h3 class="text-xl font-medium text-gray-900">{{ review.name }}</h3>
                   <p class="text-sm text-gray-500">{{ review.rating }} stars</p>

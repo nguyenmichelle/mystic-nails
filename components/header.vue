@@ -1,6 +1,6 @@
 <template>
   <Disclosure as="nav" class="bg-white-800" v-slot="{ open }">
-    <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+    <div class="mx-auto max-w-7xl px-5">
       <div class="flex h-16 items-center justify-between">
         <!-- Left Section -->
         <div class="flex-1 flex items-center justify-start">
@@ -18,8 +18,8 @@
         </div>
 
         <!-- Right Section -->
-        <div class="flex-1 flex items-center justify-end hidden md:block">
-          <div class="flex space-x-1">
+        <div class="flex-1 flex items-right justify-end hidden md:block">
+          <div class="text-right">
             <a v-for="item in navigation" :key="item.name" :href="item.href"
                :class="[item.current ? 'bg-gray-900 text-white' : 'text-gray-500 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium']"
                :aria-current="item.current ? 'page' : undefined">
