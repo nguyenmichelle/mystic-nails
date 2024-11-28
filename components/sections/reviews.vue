@@ -8,7 +8,9 @@
               <div class="flex items-center space-x-4">
                 <div>
                   <h3 class="text-xl font-medium text-gray-900">{{ review.author_name }}</h3>
-                  <p class="text-sm text-gray-500">{{ review.rating }} stars</p>
+                  <div class="inline-block" v-for="starIndex in review.rating">
+                    <StarIcon class="w-3 h-3 text-yellow-500" />
+                  </div>
                   <p class="text-sm text-gray-500">{{ review.relative_time_description }}</p>
                 </div>
               </div>
@@ -21,23 +23,32 @@
   </div>
 </template>
 
-<script setup>
-import { ref, onMounted } from 'vue';
+<script>
+import { StarIcon } from '@heroicons/vue/24/solid'
 
-const reviews = ref([]);
-
-const fetchReviews = async () => {
-  try {
-    const response = await fetch('/.netlify/functions/googleReviews');
-    const data = await response.json();
-    console.log(data);
-    reviews.value = data.reviews || []
-  } catch (error) {
-    console.error('Error fetching reviews:', error);
+export default {
+  data () {
+    return {
+      reviews: []
+    }
+  },
+  mounted() {
+    this.fetchReviews();
+  },
+  methods: {
+    async fetchReviews() {
+      try {
+        const response = await fetch('/.netlify/functions/googleReviews');
+        const data = await response.json();
+        console.log(data)
+        this.reviews = data.reviews || []
+      } catch (error) {
+        console.error('Error fetching reviews:', error);
+      }
+    }
+  },
+  components: {
+    StarIcon
   }
-};
-
-onMounted(() => {
-  fetchReviews();
-});
+}
 </script>
